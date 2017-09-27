@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Taller_claseList</string>
+    <string name="agregar">add</string>
+    <string name="android">Android</string>
+    <string name="apple">Apple</string>
+    <string name="blanco">White</string>
+    <string name="capacidadRam">Capacitor</string>
+    <string name="capacidades">Capacitor</string>
+    <string name="color">Colors</string>
+    <string name="confirmacion">Phone Save</string>
+    <string name="guardar">Save</string>
+    <string name="huawei">Huawei</string>
+    <string name="limpiar">Clean</string>
+    <string name="listar">To list</string>
+    <string name="negro">Black</string>
+    <string name="nokia">Nokia</string>
+    <string name="numero">Numbers</string>
+    <string name="precio">Price</string>
+    <string name="precios">Precios</string>
+    <string name="samsung">Samsung</string>
+    <string name="titulo2">list of people</string>
+    <string name="azul">blue</string>
+    <string name="crear">add</string>
+    <string name="ios">IOS</string>
+    <string name="marca">Brand</string>
+    <string name="reporte1">report1</string>
+    <string name="reporte4">report4</string>
+    <string name="reporte5">report5</string>
+    <string name="reportes">reports</string>
+    <string name="sistema">Sistem</string>
+</resources>

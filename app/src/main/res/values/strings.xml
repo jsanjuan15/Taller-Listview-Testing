@@ -1,0 +1,76 @@
+<resources>
+    <string name="app_name">Taller_claseList</string>
+    <string name="agregar">AGREGAR</string>
+    <string name="guardar">GUARDAR</string>
+    <string name="limpiar">LIMPIAR</string>
+    <string name="precio">PRECIO</string>
+    <string name="capacidadRam">Capacidad</string>
+    <string name="listar">Listar</string>
+    <string name="precios">Precios</string>
+    <string name="numero">Numero</string>
+    <string name="capacidades">Capacidad</string>
+    <string name="color">Color</string>
+    <string name="titulo2">Listado de celular</string>
+    <string name="error">debe ingresar precios y cantidades</string>
+    <string name="mensaje_exitoso">guardado exitosamente</string>
+
+    <string-array name="opciones">
+        <item>@string/crear</item>
+        <item>@string/listar</item>
+        <item>@string/reportes</item>
+    </string-array>
+    <string-array name="color">
+        <item>@string/negro</item>
+        <item>@string/blanco</item>
+        <item>@string/azul</item>
+
+
+    </string-array>
+    <string-array name="marca">
+        <item>@string/samsung</item>
+        <item>@string/huawei</item>
+        <item>@string/nokia</item>
+        <item>@string/apple</item>
+
+
+    </string-array>
+
+    <string-array name="sistema">
+        <item>@string/android</item>
+        <item>@string/ios</item>
+
+
+
+    </string-array>
+
+    <array name="reporte">
+        <item>@string/reporte1</item>
+        <item>@string/reporte4</item>
+        <item>@string/reporte5</item>
+
+    </array>
+
+
+    <string name="confirmacion">celular Guardado Exitosamente!</string>
+    <string name="android">Android</string>
+    <string name="samsung">Samsung</string>
+    <string name="apple">Apple</string>
+    <string name="ios">Ios</string>
+    <string name="nokia">Nokia</string>
+    <string name="negro">Negro</string>
+    <string name="blanco">Blanco</string>
+    <string name="azul">azul</string>
+    <string name="huawei">Huewei</string>
+    <string name="sistema">Sistema</string>
+    <string name="marca">Marca</string>
+    <string name="generar">Generar</string>
+    <string name="resultado">Resultado</string>
+    <string name="reporte1">Reporte 1</string>
+    <string name="reporte4">Reporte 4</string>
+    <string name="reporte5">Reporte 5</string>
+    <string name="reportes">Reportes</string>
+    <string name="crear">Crear</string>
+    <string name="resultad">Resultad</string>
+
+
+</resources>
