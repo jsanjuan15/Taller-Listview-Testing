@@ -34,16 +34,19 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="textPersonName"
-                android:text="@string/precio" />
+                android:hint="@string/precio"
+                android:inputType="textPersonName|number"
+                android:numeric="integer" />
 
             <EditText
                 android:id="@+id/txtcapacidad"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="textPersonName"
-                android:text="@string/capacidadRam" />
+                android:hint="@string/capacidadRam"
+                android:inputType="textPersonName|number"
+                android:numeric="integer|signed|decimal"
+                android:phoneNumber="false" />
 
             <TextView
                 android:id="@+id/txtMarca"
@@ -77,8 +80,10 @@
                 android:layout_marginTop="20dp">
 
                 <Button
+                    android:id="@+id/guardar"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:onClick="Guardar"
                     android:text="@string/guardar" />
                     android:id="@+id/btnAgregar"
                     android:onClick="Guardar" />

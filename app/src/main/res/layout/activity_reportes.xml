@@ -14,12 +14,6 @@
         tools:layout_editor_absoluteY="8dp"
         android:weightSum="1">
 
-        <Spinner
-            android:id="@+id/cbxreporte"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.03" />
-
         <Button
             android:id="@+id/button"
             style="@style/generar"
@@ -28,6 +22,12 @@
             android:onClick="GenerarReporte"
             android:text="@string/generar"
             android:textAlignment="center" />
+
+        <Spinner
+            android:id="@+id/cbxreporte"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.03" />
 
         <TextView
             android:id="@+id/textView6"
@@ -44,5 +44,6 @@
             android:layout_height="match_parent"
             android:ems="10"
             android:inputType="textMultiLine" />
+
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

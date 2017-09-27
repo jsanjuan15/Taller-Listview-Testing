@@ -15,6 +15,8 @@ public class Datos {
     public static ArrayList<Celular> Obtener(){
         return cel;
     }
+
+
     public static String ObtenerPrecioCapacidad()
     {
         int sw =0 ;
