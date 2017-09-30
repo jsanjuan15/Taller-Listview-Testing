@@ -5,17 +5,26 @@ package com.example.android.taller_claselist;
  */
 
 public class Celular {
+
+
+
     private double precio;
     private double capacidad;
     private int marca;
     private int color;
     private int sistema;
+
+
+
+
     public Celular(double precio, double capacidad, int marca, int color, int sistema) {
         this.precio = precio;
         this.capacidad = capacidad;
         this.marca = marca;
         this.color = color;
         this.sistema = sistema;
+
+
     }
     public double getPrecio() {
         return precio;

@@ -13,6 +13,8 @@ import android.widget.Spinner;
 import java.util.List;
 
 public class Principal extends AppCompatActivity {
+
+
     private ListView lv;
     private String op[];
     private Intent i;

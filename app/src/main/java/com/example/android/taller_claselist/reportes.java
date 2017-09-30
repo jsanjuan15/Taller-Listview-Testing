@@ -27,8 +27,14 @@ public class reportes extends AppCompatActivity {
         ArrayAdapter<String> adapter_reporte = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item,reporte);
         spinerReporte.setAdapter(adapter_reporte);
         res=(EditText)findViewById(R.id.txtresultado);
+
     }
-    public void GenerarReporte(View v){
+
+
+
+
+
+         public void GenerarReporte(View v){
         int sel_reporte = spinerReporte.getSelectedItemPosition();
         if (sel_reporte==0){
 

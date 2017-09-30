@@ -16,15 +16,31 @@ public class listar_celular extends AppCompatActivity {
     private ArrayList<Celular> celulars;
     private Resources resources;
     private String marca[];
+
+
     private String sistema[];
     private String color[];
+
+
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_listar_celular);
         tabla=(TableLayout)findViewById(R.id.tblCelular);
         celulars=Datos.Obtener();
+        resources=this.getResources();
         Log.d("Cel", celulars.toString());
+        color= resources.getStringArray(R.array.color);
+        sistema= resources.getStringArray(R.array.sistema);
+        marca= resources.getStringArray(R.array.marca);
+
+
+
 
         for (int i = 0; i <celulars.size() ; i++) {
             TableRow fila = new TableRow(this);
@@ -37,9 +53,9 @@ public class listar_celular extends AppCompatActivity {
 
             c1.setText(""+celulars.get(i).getPrecio());
             c2.setText(""+celulars.get(i).getCapacidad());
-            c3.setText(""+celulars.get(i).getColor());
-            c4.setText(""+celulars.get(i).getSistema());
-            c5.setText(""+celulars.get(i).getMarca());
+            c3.setText(color[celulars.get(i).getColor()]);
+            c4.setText(sistema[celulars.get(i).getSistema()]);
+            c5.setText(marca[celulars.get(i).getMarca()]);
 
 
 

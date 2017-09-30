@@ -8,6 +8,9 @@ import java.util.ArrayList;
 
 
 public class Datos {
+
+
+
     private static ArrayList<Celular> cel = new ArrayList<>();
     public static void Guardarcelulares(Celular p){
         cel.add(p);
@@ -17,9 +20,11 @@ public class Datos {
     }
 
 
-    public static String ObtenerPrecioCapacidad()
+
+
+        public static String ObtenerPrecioCapacidad()
     {
-        int sw =0 ;
+           int sw =0 ;
         String resultado = "";
         for(int i = 0 ; i< cel.size();i++){
             if (cel.get(i).getMarca()==1 && cel.get(i).getColor()==0 && cel.get(i).getSistema()==0){
@@ -31,9 +36,13 @@ public class Datos {
             return "ERROR Sin Resultados";
         }
         return resultado;
-    }
-    public static String ObtenerMarcaApple()
-    {
+       }
+
+
+         public static String ObtenerMarcaApple()
+
+
+         {
         int sw =0 ;
         for(int i = 0 ; i< cel.size();i++){
             if (cel.get(i).getMarca()==3 && cel.get(i).getColor()==0){
@@ -42,19 +51,23 @@ public class Datos {
         }
         return "" + sw;
     }
-    public static String celularesPrecioNokia()
-    {
+
+
+
+             public static String celularesPrecioNokia()
+         {
         double suma = 0;
-        int sw =0 ;
+          int sw =0 ;
         for(int i = 0 ; i< cel.size();i++){
             if (cel.get(i).getMarca()==0){
                 suma = suma + cel.get(i).getPrecio();
                 sw = sw+1;
             }
         }
-        if (sw<1){
+            if (sw<1){
             return "error sin celular";
         }
         return "" + (suma/sw);
     }
+
 }
