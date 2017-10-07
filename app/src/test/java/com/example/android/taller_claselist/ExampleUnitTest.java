@@ -46,6 +46,7 @@ public class ExampleUnitTest {
 
     }
 
+
     @Test
     public void precio_capacidad() {
         Celular n1 = new Celular(10, 4, 1, 0, 0);
@@ -56,6 +57,50 @@ public class ExampleUnitTest {
 
         Celular celular[] = {n1, n2, n3, n4};
         ArrayList<Celular> cel = new ArrayList<>(Arrays.asList(celular));
-        assertEquals(3, Metodos.ObtenerMarcaApple(cel));
+        assertEquals(0, Metodos.ObtenerMarcaApple(cel));
+    }
+
+
+
+
+    @Test
+    public void celulares_nokia_incorrecto() {
+        Celular n1 = new Celular(10, 4, 2, 2, 1);
+        Celular n2 = new Celular(10, 4, 2, 2, 1);
+        Celular n3 = new Celular(10, 4, 2, 2, 1);
+        Celular n4 = new Celular(10, 4, 1, 0, 1);
+
+
+        Celular celular[] = {n1, n2, n3, n4};
+        ArrayList<Celular> cel = new ArrayList<>(Arrays.asList(celular));
+        assertNotEquals(14, Metodos.celularesPrecioNokia(cel),0);
+
+    }
+
+    @Test
+    public void marca_apple_incorrecto() {
+        Celular n1 = new Celular(10, 4, 3, 0, 1);
+        Celular n2 = new Celular(10, 4, 3, 0, 1);
+        Celular n3 = new Celular(10, 4, 3, 0, 1);
+        Celular n4 = new Celular(10, 4, 1, 0, 1);
+
+
+        Celular celular[] = {n1, n2, n3, n4};
+        ArrayList<Celular> cel = new ArrayList<>(Arrays.asList(celular));
+        assertNotEquals(4, Metodos.ObtenerMarcaApple(cel));
+
+    }
+
+    @Test
+    public void precio_capacidad_incorrecto() {
+        Celular n1 = new Celular(10, 4, 1, 0, 0);
+        Celular n2 = new Celular(10, 4, 1, 0, 0);
+        Celular n3 = new Celular(10, 4, 1, 0, 0);
+        Celular n4 = new Celular(11, 1, 1, 0, 0);
+
+
+        Celular celular[] = {n1, n2, n3, n4};
+        ArrayList<Celular> cel = new ArrayList<>(Arrays.asList(celular));
+        assertNotEquals(3, Metodos.ObtenerMarcaApple(cel));
     }
 }
